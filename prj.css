@@ -1,0 +1,133 @@
+body {
+    font-family: 'Montserrat', sans-serif !important; /* Police plus élégante */
+    margin: 0;
+    padding: 0;
+    background: url("assete/image.png") no-repeat center center fixed;
+    background-size: cover;
+    backdrop-filter: blur(2px);
+    text-align: center;
+}
+
+.container {
+    max-width: 500px;
+    margin: 60px auto;
+    background: #f8dede; /* rose clair inspiré des bulles de texte */
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+h2 {
+    color: #2c3e50; /* même bleu foncé que les boutons */
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.btn {
+    background: #2c3e50; /* bleu foncé */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.btn:hover {
+    background: #e65550;
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Masquer l'input natif pour fichier */
+.file-input-hidden {
+    display: none;
+}
+
+/* Affichage nom du fichier */
+#file-name-display {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #444;
+}
+
+/* Boutons de sélection de langue */
+.lang-options {
+    display: none;
+    margin-top: 10px;
+}
+
+.lang-btn {
+    background: #ffffff;
+    color: #333;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.lang-btn:hover {
+    background: #ff6f61;
+    color: white;
+}
+
+.result-title {
+    margin-top: 20px;
+    color: #2c3e50;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.resultat-box {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+    min-height: 50px;
+    box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease-in-out;
+}
+
+.resultat-box:hover {
+    background: #eef0f2;
+}
+.file-label {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2c3e50;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 15px;
+}
+.file-label:hover {
+    background: #e65550;
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+.container button, .file-label {
+    margin: 15px auto;
+    width: calc(100% - 48px); /* Même largeur que les autres boutons */
+}
